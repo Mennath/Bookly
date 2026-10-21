@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -34,7 +35,7 @@ function Header() {
           </a>
 
           <a
-            href="/#sale"
+            href="/About"
             className="text-sm font-semibold text-gray-700 transition hover:text-amber-600"
           >
             About Us
