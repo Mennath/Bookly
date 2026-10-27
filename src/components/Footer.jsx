@@ -1,77 +1,25 @@
-function Footer() {
+import { BookOpen, Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "react-router-dom";
+
+export default function Footer() {
   return (
-    <footer className="bg-gray-950 px-4 pb-6 pt-12 text-gray-300 sm:px-8 lg:px-16">
-      <div className="mx-auto max-w-7xl">
-        {/* Logo and Description */}
-        <div className="flex flex-col items-center justify-between gap-6 border-b border-gray-800 pb-8 text-center md:flex-row md:text-left">
-          <a
-            href="/"
-            className="group flex items-center gap-3 text-3xl font-extrabold tracking-tight text-white transition hover:text-amber-400"
-          >
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-amber-500 text-2xl text-gray-950 transition group-hover:rotate-6">
-              ▣
-            </span>
-            Bookly<span className="text-amber-400">.</span>
-          </a>
-
-          <p className="max-w-md text-sm leading-6 text-gray-400">
-            Discover your next favorite book and enjoy the journey of reading
-            with Bookly.
-          </p>
+    <footer id="contact" className="bg-plum text-white">
+      <div className="mx-auto flex max-w-6xl flex-col gap-7 px-5 py-7 md:flex-row md:items-center md:justify-between">
+        <div>
+          <Link to="/" className="flex items-center gap-2 text-sm font-bold"><span className="grid h-7 w-7 place-items-center rounded bg-rose"><BookOpen size={14}/></span>Bookshop<span className="text-rose">.</span></Link>
+          <p className="mt-2 max-w-sm text-[10px] leading-5 text-white/55">Your favorite place to discover books, stories, and new ideas.</p>
+          <p className="mt-2 text-[9px] text-white/40">© 2026 Bookshop. All rights reserved.</p>
         </div>
-
-        {/* Navigation */}
-        <div className="flex flex-col items-center justify-between gap-6 py-7 md:flex-row">
-          <nav
-            aria-label="Footer navigation"
-            className="flex flex-wrap justify-center gap-x-7 gap-y-4"
-          >
-            <a
-              href="/"
-              className="text-sm transition-colors hover:text-amber-400"
-            >
-              Home
-            </a>
-
-            <a
-              href="/books"
-              className="text-sm transition-colors hover:text-amber-400"
-            >
-              Books
-            </a>
-
-            <a
-              href="/#recommended"
-              className="text-sm transition-colors hover:text-amber-400"
-            >
-              About Us
-            </a>
-
-            <a
-              href="/#sale"
-              className="text-sm transition-colors hover:text-amber-400"
-            >
-              Contact
-            </a>
-          </nav>
-
-          <a
-            href="mailto:hello@bookly.com"
-            className="text-sm text-gray-400 transition-colors hover:text-amber-400"
-          >
-            hello@bookly.com
-          </a>
+        <div className="flex flex-wrap gap-4 text-[10px] text-white/65">
+          <Link className="hover:text-white" to="/">Home</Link><Link className="hover:text-white" to="/books">Books</Link><Link className="hover:text-white" to="/about">About</Link><a href="#contact" className="hover:text-white">Contact</a>
         </div>
-
-        {/* Copyright */}
-        <div className="border-t border-gray-800 pt-5 text-center">
-          <p className="text-xs leading-6 text-gray-500 sm:text-sm">
-            © {new Date().getFullYear()} Bookly. All rights reserved.
-          </p>
+        <div className="flex items-center gap-2 text-white/70">
+          <a href="#contact" aria-label="Facebook" className="rounded-full bg-white/10 p-2 hover:bg-rose"><Facebook size={13}/></a>
+          <a href="#contact" aria-label="Instagram" className="rounded-full bg-white/10 p-2 hover:bg-rose"><Instagram size={13}/></a>
+          <a href="#contact" aria-label="Twitter" className="rounded-full bg-white/10 p-2 hover:bg-rose"><Twitter size={13}/></a>
+          <span className="ml-2 rounded-full border border-white/15 px-3 py-1 text-[9px] text-white/45">EN · USD</span>
         </div>
       </div>
     </footer>
   );
 }
-
-export default Footer;

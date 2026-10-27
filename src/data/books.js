@@ -1,0 +1,58 @@
+export const books = [
+  {
+    id: 1,
+    title: "Rich Dad Poor Dad",
+    author: "Robert T. Kiyosaki",
+    price: 18.5,
+    category: "Business",
+    image: "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg",
+    badge: "Bestseller",
+  },
+  {
+    id: 2,
+    title: "The Design of Books",
+    author: "Debbie Berne",
+    price: 24.0,
+    category: "Design",
+    image: "https://covers.openlibrary.org/b/isbn/9780226398252-L.jpg",
+    badge: "Popular",
+  },
+  {
+    id: 3,
+    title: "Atomic Habits",
+    author: "James Clear",
+    price: 21.99,
+    category: "Personal Growth",
+    image: "https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg",
+    badge: "",
+  },
+  {
+    id: 4,
+    title: "The Psychology of Money",
+    author: "Morgan Housel",
+    price: 17.5,
+    category: "Business",
+    image: "https://covers.openlibrary.org/b/isbn/9780857197689-L.jpg",
+    badge: "",
+  },
+  {
+    id: 5,
+    title: "The Art of Research",
+    author: "Wayne C. Booth",
+    price: 19.75,
+    category: "Education",
+    image: "https://covers.openlibrary.org/b/isbn/9780226239736-L.jpg",
+    badge: "",
+  },
+  {
+    id: 6,
+    title: "Design of Books",
+    author: "Various Authors",
+    price: 22.0,
+    category: "Design",
+    image: "https://covers.openlibrary.org/b/isbn/9781592534470-L.jpg",
+    badge: "",
+  },
+];
+
+export const categories = ["All", "Business", "Design", "Personal Growth", "Education"];
