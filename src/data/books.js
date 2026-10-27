@@ -14,7 +14,7 @@ export const books = [
     author: "Debbie Berne",
     price: 24.0,
     category: "Design",
-    image: "https://covers.openlibrary.org/b/isbn/9780226398252-L.jpg",
+    image: "https://covers.openlibrary.org/b/isbn/9781612680194-L.jpg",
     badge: "Popular",
   },
   {
